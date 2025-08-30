@@ -2,16 +2,21 @@
 package practico2;
 
 import java.util.Random;
+import java.util.Scanner;
 
 
 public class Castor {
     
-    protected int cola;
-    protected int velocidad;
+    Scanner leer = new Scanner(System.in);
+    
+    protected double cola;
+    protected double velocidad;
 
-    public Castor(int cola, int velocidad) {
-        this.cola = cola;
-        this.velocidad = velocidad;
+    public Castor() {
+        System.out.println("Ingrese longitud de cola");
+        this.cola = leer.nextDouble();
+        System.out.println("Ingrese velocidad");
+        this.velocidad = leer.nextDouble();
     }
     
     public void nadar(){

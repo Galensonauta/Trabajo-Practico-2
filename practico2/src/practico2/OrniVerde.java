@@ -8,8 +8,8 @@ public class OrniVerde extends Castor implements MamaPata {
     
     Scanner leer = new Scanner(System.in);
 
-    public OrniVerde(int cola, int velocidad) {
-        super(cola, velocidad);
+    public OrniVerde() {
+        super();
     }
 
     @Override
@@ -22,6 +22,7 @@ public class OrniVerde extends Castor implements MamaPata {
     }
 
     public void tocarGuitorgan(){
+        System.out.println("Tocando el guitorgan");
         super.tocarGuitarra();
         tocarOrgano();
         System.out.println("cuac cuaac...!");
