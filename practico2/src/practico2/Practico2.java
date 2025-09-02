@@ -42,7 +42,7 @@ public class Practico2 {
         }catch(ArrayIndexOutOfBoundsException e) {
             System.out.println("Error de indice");
         }finally{
-            System.out.println("los aornitohermanos juntos al fin...");
+            System.out.println("los ornitohermanos juntos al fin...");
         }
         
         List<OrniAzul> nadadores = new ArrayList<>();

@@ -14,7 +14,7 @@ public class OrniAzul extends Castor {
     public OrniAzul(){
         super();
 
-        System.out.println("Ingerse propulsion de 5 a 10");
+        System.out.println("Ingrese propulsion de 5 a 10");
         int aux = leer.nextInt();
         while(aux > 10 || aux < 5  ){
             System.out.println("Ingrese numero valido");
