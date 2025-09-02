@@ -15,8 +15,14 @@ public class Castor {
     public Castor() {
         System.out.println("Ingrese longitud de cola");
         this.cola = leer.nextDouble();
-        System.out.println("Ingrese velocidad");
-        this.velocidad = leer.nextDouble();
+        System.out.println("Ingrese velocidad de hasta  8kms");
+        double aux = leer.nextDouble();
+        while(aux  <= 0 || aux > 8){
+            System.out.println("Ingrese valor valido ");
+            aux = leer.nextDouble();
+        }
+        this.velocidad = aux;
+        leer.nextLine();
     }
     
     public void nadar(){

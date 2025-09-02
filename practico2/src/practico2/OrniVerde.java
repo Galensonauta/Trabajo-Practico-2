@@ -7,9 +7,14 @@ import java.util.Scanner;
 public class OrniVerde extends Castor implements MamaPata {
     
     Scanner leer = new Scanner(System.in);
+    
+    protected String nombre;
 
     public OrniVerde() {
         super();
+
+        System.out.println("Ingrese nombre");
+        this.nombre = leer.nextLine();
     }
 
     @Override
